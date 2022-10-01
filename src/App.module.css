@@ -1,0 +1,24 @@
+@media screen and (min-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .data_input {
+    margin-right: 0px;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .data_input {
+    margin-right: 50px;
+    margin-bottom: 0px;
+  }
+}
+
+.container {
+  padding: 40px;
+}

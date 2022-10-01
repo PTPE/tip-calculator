@@ -1,0 +1,79 @@
+@media screen and (min-width: 375px) {
+  .people_input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .people_input {
+    width: 100%;
+  }
+}
+
+.number_of_people {
+  display: flex;
+  flex-direction: column;
+  color: hsl(186, 14%, 43%);
+  position: relative;
+}
+
+.warning {
+  color: rgba(255, 47, 0, 0.948);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.people_input,
+.people_input_warning {
+  border-radius: 5px;
+  background-color: hsl(189, 41%, 97%);
+  height: 50px;
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  text-align: right;
+  outline: none;
+  padding-right: 10px;
+}
+
+.people_input {
+  border: 2px solid hsl(189, 41%, 97%);
+}
+
+.people_input_warning {
+  border: 2px solid red;
+}
+
+.people_input:hover,
+.people_input:focus,
+.people_input:active {
+  border: 2px solid hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+
+.people_input_warning:hover,
+.people_input_warning:focus,
+.people_input_warning:active {
+  cursor: pointer;
+}
+
+.people_input::placeholder,
+.people_input_warning::placeholder {
+  text-align: right;
+  font-size: 20px;
+  color: hsl(186, 14%, 43%);
+}
+
+.people_input::-webkit-outer-spin-button,
+.people_input::-webkit-inner-spin-button,
+.people_input_warning::-webkit-outer-spin-button,
+.people_input_warning::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.people_icon {
+  position: absolute;
+  bottom: 17px;
+  left: 10px;
+}

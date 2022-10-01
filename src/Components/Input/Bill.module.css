@@ -1,0 +1,56 @@
+@media screen and (min-width: 375px) {
+  .bill_input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bill_input {
+    width: 100%;
+  }
+}
+
+.bill {
+  display: flex;
+  flex-direction: column;
+  color: hsl(184, 14%, 56%);
+  position: relative;
+  font-size: 15px;
+}
+
+.bill_input {
+  height: 50px;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  border: 2px solid hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.bill_input:hover,
+.bill_input:focus,
+.bill_input:active {
+  border: 2px solid hsl(172, 67%, 45%);
+  cursor: pointer;
+  outline: none;
+}
+
+.bill_input::placeholder {
+  text-align: right;
+  font-size: 20px;
+  color: hsl(184, 14%, 56%);
+}
+
+.bill_input::-webkit-outer-spin-button,
+.bill_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cash_icon {
+  position: absolute;
+  bottom: 17px;
+  left: 5px;
+}
